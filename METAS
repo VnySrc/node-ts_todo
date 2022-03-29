@@ -1,0 +1,5 @@
+GET /list = Listar tarefas
+POST /new = Criar tarefa
+
+PUT /todo/:id = editar
+DELETE /todo/:id = deletar
