@@ -3,7 +3,7 @@ NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus aut
 
 # Installation #
 
-npm install
+npm install <br/>
 .env - config port 
 
 # Start API #
