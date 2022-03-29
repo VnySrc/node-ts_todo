@@ -1,9 +1,10 @@
-# api-ts_phrases
+# api-ts_todo
 NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus autores CRUD / MVC
 
 # Installation #
 
 npm install
+.env - config port 
 
 # Start API #
 
@@ -13,31 +14,23 @@ npm run start-dev
 <hr />
 <br />
 
-### Ping to api / test availability ###
-GET - 127.0.0.1:3000/ping
+### Lists all tasks ###
+GET - 127.0.0.1:2000/list
 <br /> <br /> 
 
-### Lists all phrases stored in the database ###
-GET - 127.0.0.1:3000/phrases
+### Create a new task ###
+POST - 127.0.0.1:2000/new
+
+Pass the "title" key with the author name of the sentence
+pass the "content" key with the content of the new task
 <br /> <br /> 
 
-### Get a specific phrase from the database by id ###
-GET - 127.0.0.1:3000/name/anyName
+### Edit a Task ###
+PUT - 127.0.0.1:2000/edit/:id
+
+Pass the "title" key with the author name of the sentence
+pass the "content" key with the content of the new task
 <br /> <br /> 
 
-### Create a new sentence in the database ###
-POST - 127.0.0.1:3000/phrases/newphrase
-
-Pass the author key with the author name of the sentence
-pass the content key with the phrase of the new phrase
-<br /> <br /> 
-
-### Edit a database phrase by id ###
-PUT - 127.0.0.1:3000/phrases/edit/idDaFrase
-
-Pass the key author with the new name of the author of the sentence
-pass the content key with the new sentence of the new sentence
-<br /> <br /> 
-
-### Delete a phrase from the database by id ###
-DELETE - 127.0.0.1:3000/phrases/delete/idDaFrase
+### Delete a Task from the database by id ###
+DELETE - 127.0.0.1:2000/delete/:id
